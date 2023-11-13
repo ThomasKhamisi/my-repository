@@ -1,0 +1,63 @@
+<html>
+<head>
+    <title>Simple Customized Log In Page with Password Reset Button</title>
+    <style>
+        /* Add some CSS styles to make the page look more attractive */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: lightblue;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+        }
+
+        form {
+            width: 300px;
+            margin: 0 auto;
+            border: 2px solid white;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: white;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        input {
+            width: 100%;
+            padding: 5px;
+            border: 1px solid gray;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: lightblue;
+            color: white;
+            font-weight: bold;
+        }
+
+        a {
+            color: blue;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>DSC</h1>
+    <form action="login.php" method="post">
+        <p>Username: <input type="text" name="username" required></p>
+        <p>Password: <input type="password" name="password" required></p>
+        <p><input type="submit" value="Log In"></p>
+        <p><a href="reset.php">Forgot your password?</a></p>
+    </form>
+</body>
+</html>
+
+
